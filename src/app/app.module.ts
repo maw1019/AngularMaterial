@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule, MatDatepickerModule,MatNativeDateModule} from '@angular/material';
+
 import { AppComponent } from './app.component';
+import { DatepickerOverviewExample } from './datepicker.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatepickerOverviewExample
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NoopAnimationsModule,
+    MatButtonModule, MatCheckboxModule, MatDatepickerModule,MatNativeDateModule   
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [],
+  bootstrap: [
+    AppComponent,
+    DatepickerOverviewExample
+  ]
 })
 export class AppModule { }
