@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatDatepickerModule,MatNativeDateModule} from '@angular/material';
@@ -17,6 +18,7 @@ import { DatepickerOverviewExample } from './datepicker.component';
   imports: [
     BrowserModule,
     NoopAnimationsModule,
+    FormsModule,
     MatButtonModule, MatCheckboxModule, MatDatepickerModule,MatNativeDateModule   
   ],
   exports: [],
